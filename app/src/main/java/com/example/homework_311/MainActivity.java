@@ -26,11 +26,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        init();
-        onPress();
-    }
 
-    private void init() {
         Button btn1 = findViewById(R.id.btn1);
         Button btn2 = findViewById(R.id.btn2);
         Button btn3 = findViewById(R.id.btn3);
@@ -42,11 +38,8 @@ public class MainActivity extends AppCompatActivity {
         Button btn9 = findViewById(R.id.btn9);
         Button btn0 = findViewById(R.id.btn0);
         Button btnPnt = findViewById(R.id.btnPnt);
-        TextView resTxt = findViewById(R.id.resTxt);
+        final TextView resTxt = findViewById(R.id.resTxt);
 
-    }
-
-    private void onPress() {
         btn1.setOnClickListener(new View.OnClickListener() {
             @SuppressLint("SetTextI18n")
             @Override
@@ -123,8 +116,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 resTxt.setText(resTxt.getText() + ".");
+                v.setClickable(false);
             }
         });
-
     }
 }
