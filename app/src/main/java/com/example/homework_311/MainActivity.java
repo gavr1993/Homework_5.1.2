@@ -21,6 +21,14 @@ public class MainActivity extends AppCompatActivity {
     private Button btn0;
     private Button btnPnt;
     private TextView resTxt;
+    private Button btnDiv;
+    private Button btnMlt;
+    private Button btnSum;
+    private Button btnMin;
+    private Button btnRes;
+    private Button btnC;
+    private Button btnPm;
+    private Button btnPrc;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +46,14 @@ public class MainActivity extends AppCompatActivity {
         Button btn9 = findViewById(R.id.btn9);
         Button btn0 = findViewById(R.id.btn0);
         Button btnPnt = findViewById(R.id.btnPnt);
+        Button btnDiv = findViewById(R. id. btnDiv);
+        Button btnMlt = findViewById(R. id. btnMlt);
+        Button btnSum = findViewById(R. id. btnSum);
+        Button btnMin = findViewById(R. id. btnMin);
+        Button btnRes = findViewById(R. id. btnRes);
+        Button btnC = findViewById(R. id. btnC);
+        Button btnPm = findViewById(R. id. btnPm);
+        Button btnPrc = findViewById(R. id. btnPrc);
         final TextView resTxt = findViewById(R.id.resTxt);
 
         btn1.setOnClickListener(new View.OnClickListener() {
