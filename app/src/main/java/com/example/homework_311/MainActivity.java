@@ -1,11 +1,15 @@
 package com.example.homework_311;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.solver.widgets.ConstraintTableLayout;
+import androidx.constraintlayout.widget.ConstraintLayout;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
+import android.text.Layout;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -29,6 +33,8 @@ public class MainActivity extends AppCompatActivity {
     private Button btnC;
     private Button btnPm;
     private Button btnPrc;
+    private Button btnSetSimple;
+    private Button btnSetIng;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,7 +60,27 @@ public class MainActivity extends AppCompatActivity {
         Button btnC = findViewById(R. id. btnC);
         Button btnPm = findViewById(R. id. btnPm);
         Button btnPrc = findViewById(R. id. btnPrc);
+        Button btnSetSimle = findViewById(R. id. btnSetSimple);
+        Button btnSetIng = findViewById(R. id. btnSetIng);
         final TextView resTxt = findViewById(R.id.resTxt);
+        final LinearLayout simple = findViewById(R. id. simple);
+        final ConstraintLayout ingeneering = findViewById(R. id. ingeneering);
+
+        btnSetSimle.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                simple.setVisibility(View.VISIBLE);
+                ingeneering.setVisibility(View.GONE);
+            }
+        });
+
+        btnSetIng.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                simple.setVisibility(View.GONE);
+                ingeneering.setVisibility(View.VISIBLE);
+            }
+        });
 
         btn1.setOnClickListener(new View.OnClickListener() {
             @SuppressLint("SetTextI18n")
