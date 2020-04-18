@@ -52,35 +52,17 @@ public class MainActivity extends AppCompatActivity {
         Button btn9 = findViewById(R.id.btn9);
         Button btn0 = findViewById(R.id.btn0);
         Button btnPnt = findViewById(R.id.btnPnt);
-        Button btnDiv = findViewById(R. id. btnDiv);
-        Button btnMlt = findViewById(R. id. btnMlt);
-        Button btnSum = findViewById(R. id. btnSum);
-        Button btnMin = findViewById(R. id. btnMin);
-        Button btnRes = findViewById(R. id. btnRes);
-        Button btnC = findViewById(R. id. btnC);
-        Button btnPm = findViewById(R. id. btnPm);
-        Button btnPrc = findViewById(R. id. btnPrc);
-        Button btnSetSimle = findViewById(R. id. btnSetSimple);
-        Button btnSetIng = findViewById(R. id. btnSetIng);
+        Button btnDiv = findViewById(R.id.btnDiv);
+        Button btnMlt = findViewById(R.id.btnMlt);
+        Button btnSum = findViewById(R.id.btnSum);
+        Button btnMin = findViewById(R.id.btnMin);
+        Button btnRes = findViewById(R.id.btnRes);
+        Button btnC = findViewById(R.id.btnC);
+        Button btnPm = findViewById(R.id.btnPm);
+        Button btnPrc = findViewById(R.id.btnPrc);
         final TextView resTxt = findViewById(R.id.resTxt);
-        final LinearLayout simple = findViewById(R. id. simple);
-        final ConstraintLayout ingeneering = findViewById(R. id. ingeneering);
-
-        btnSetSimle.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                simple.setVisibility(View.VISIBLE);
-                ingeneering.setVisibility(View.GONE);
-            }
-        });
-
-        btnSetIng.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                simple.setVisibility(View.GONE);
-                ingeneering.setVisibility(View.VISIBLE);
-            }
-        });
+        final LinearLayout simple = findViewById(R.id.simple);
+        final ConstraintLayout ingeneering = findViewById(R.id.ingeneering);
 
         btn1.setOnClickListener(new View.OnClickListener() {
             @SuppressLint("SetTextI18n")
