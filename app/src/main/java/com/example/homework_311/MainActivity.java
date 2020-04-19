@@ -1,12 +1,10 @@
 package com.example.homework_311;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.constraintlayout.solver.widgets.ConstraintTableLayout;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
-import android.text.Layout;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
@@ -63,85 +61,5 @@ public class MainActivity extends AppCompatActivity {
         final TextView resTxt = findViewById(R.id.resTxt);
         final LinearLayout simple = findViewById(R.id.simple);
         final ConstraintLayout ingeneering = findViewById(R.id.ingeneering);
-
-        btn1.setOnClickListener(new View.OnClickListener() {
-            @SuppressLint("SetTextI18n")
-            @Override
-            public void onClick(View v) {
-                resTxt.setText(resTxt.getText() + "1");
-            }
-        });
-
-        btn2.setOnClickListener(new View.OnClickListener() {
-            @SuppressLint("SetTextI18n")
-            @Override
-            public void onClick(View v) {
-                resTxt.setText(resTxt.getText() + "2");
-            }
-        });
-        btn3.setOnClickListener(new View.OnClickListener() {
-            @SuppressLint("SetTextI18n")
-            @Override
-            public void onClick(View v) {
-                resTxt.setText(resTxt.getText() + "3");
-            }
-        });
-        btn4.setOnClickListener(new View.OnClickListener() {
-            @SuppressLint("SetTextI18n")
-            @Override
-            public void onClick(View v) {
-                resTxt.setText(resTxt.getText() + "4");
-            }
-        });
-        btn5.setOnClickListener(new View.OnClickListener() {
-            @SuppressLint("SetTextI18n")
-            @Override
-            public void onClick(View v) {
-                resTxt.setText(resTxt.getText() + "5");
-            }
-        });
-        btn6.setOnClickListener(new View.OnClickListener() {
-            @SuppressLint("SetTextI18n")
-            @Override
-            public void onClick(View v) {
-                resTxt.setText(resTxt.getText() + "6");
-            }
-        });
-        btn7.setOnClickListener(new View.OnClickListener() {
-            @SuppressLint("SetTextI18n")
-            @Override
-            public void onClick(View v) {
-                resTxt.setText(resTxt.getText() + "7");
-            }
-        });
-        btn8.setOnClickListener(new View.OnClickListener() {
-            @SuppressLint("SetTextI18n")
-            @Override
-            public void onClick(View v) {
-                resTxt.setText(resTxt.getText() + "8");
-            }
-        });
-        btn9.setOnClickListener(new View.OnClickListener() {
-            @SuppressLint("SetTextI18n")
-            @Override
-            public void onClick(View v) {
-                resTxt.setText(resTxt.getText() + "9");
-            }
-        });
-        btn0.setOnClickListener(new View.OnClickListener() {
-            @SuppressLint("SetTextI18n")
-            @Override
-            public void onClick(View v) {
-                resTxt.setText(resTxt.getText() + "0");
-            }
-        });
-        btnPnt.setOnClickListener(new View.OnClickListener() {
-            @SuppressLint("SetTextI18n")
-            @Override
-            public void onClick(View v) {
-                resTxt.setText(resTxt.getText() + ".");
-                v.setClickable(false);
-            }
-        });
     }
 }
