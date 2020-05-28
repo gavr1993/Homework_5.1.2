@@ -1,6 +1,7 @@
 package com.example.homework_311;
 
 import android.Manifest;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -16,6 +17,31 @@ import androidx.core.content.ContextCompat;
 import java.io.File;
 
 public class SettingsActivity extends AppCompatActivity {
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        switch (requestCode) {
+            case 0:
+                if (resultCode == 1) {
+                    int permissionStatus = ContextCompat.checkSelfPermission(
+                            this,
+                            Manifest.permission.WRITE_EXTERNAL_STORAGE);
+
+                    if (permissionStatus == PackageManager.PERMISSION_GRANTED) {
+                        loadImg();
+                        finish();
+                    } else {
+                        ActivityCompat.requestPermissions(this,
+                                new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE},
+                                REQUEST_CODE_PERMISSION_WRITE_STORAGE
+                        );
+                    }
+                }
+                break;
+            default:
+                super.onActivityResult(requestCode, resultCode, data);
+                break;
+        }
+    }
 
 
     public static final int REQUEST_CODE_PERMISSION_WRITE_STORAGE = 100;
