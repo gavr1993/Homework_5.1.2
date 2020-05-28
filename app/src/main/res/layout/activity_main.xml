@@ -13,6 +13,12 @@
         android:layout_height="match_parent">
 
 
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:srcCompat="@drawable/ic_launcher_background" />
+
         <LinearLayout
             android:id="@+id/simple"
             android:layout_width="match_parent"
@@ -183,6 +189,15 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnSet"
+                            style="@style/Widget.AppCompat.Button.Colored"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="настройки"
+                            android:textSize="12sp" />
 
                         <Button
                             android:id="@+id/btn0"

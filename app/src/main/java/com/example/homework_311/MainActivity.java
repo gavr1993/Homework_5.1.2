@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -58,8 +59,17 @@ public class MainActivity extends AppCompatActivity {
         Button btnC = findViewById(R.id.btnC);
         Button btnPm = findViewById(R.id.btnPm);
         Button btnPrc = findViewById(R.id.btnPrc);
+        Button btnSet = findViewById(R.id.btnSet);
+        btnSet.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,
+                        SettingsActivity.class);
+                startActivity(intent);
+            }
+        });
+
         final TextView resTxt = findViewById(R.id.resTxt);
         final LinearLayout simple = findViewById(R.id.simple);
-        final ConstraintLayout ingeneering = findViewById(R.id.ingeneering);
     }
 }

@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Homework_3.1.1</string>
+    <string name="hintTxt">установить в качестве фона</string>
+    <string name="fileNotFound">файл не найден</string>
 </resources>
